@@ -56,7 +56,7 @@ public class FlightFinderTest extends UnitTestClassBase {
 	@Before
 	public void setUp() throws Exception {
 		//Test Data
-		flightType = Constants.TRIP_TYPE.ONE_WAY;
+		flightType = TRIP_TYPE.ONE_WAY;
 		passengersNumber = "2";
 		departingFrom = "New York";
 		departingMonth = "May";
