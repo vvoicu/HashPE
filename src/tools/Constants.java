@@ -15,8 +15,8 @@ public class Constants {
 	public static final String FlyPassword = "tutorial";
 	
 	//Flight Type Selection Constants
-	public enum TRIP_TYPE { ROUND_TRIP, ONE_WAY};
-	public enum SERVICE_CLASS_TYPE { Economy, Business, First};
+	public static enum TRIP_TYPE { ROUND_TRIP, ONE_WAY};
+	public static enum SERVICE_CLASS_TYPE { ECONOMY, BUSINESS, FIRST};
 	
 	//Google Site Contant URL
 	public static final String GOOGLE_BASE_URL = "https://www.google.com/ncr";

@@ -20,8 +20,8 @@ import browser.pages.flight.SelectFlightPage;
 import tools.Constants;
 import tools.Constants.SERVICE_CLASS_TYPE;
 import tools.Constants.TRIP_TYPE;
-import tools.Utils.StringUtils;
 import tools.models.flight.CustomerModel;
+import tools.utils.StringUtils;
 import unittesting.UnitTestClassBase;
 
 public class BookAFlightTest extends UnitTestClassBase {
@@ -76,7 +76,7 @@ public class BookAFlightTest extends UnitTestClassBase {
 		arrivingIn = "Seattle";
 		arrivingMonth = "July";
 		arrivingDay = "30";
-		serviceClass = SERVICE_CLASS_TYPE.Business;
+		serviceClass = SERVICE_CLASS_TYPE.BUSINESS;
 		airline = "Unified Airlines";
 
 		cardNumber = "1234123412341234";

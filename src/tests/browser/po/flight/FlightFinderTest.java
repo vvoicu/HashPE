@@ -17,19 +17,17 @@ import browser.pages.flight.SelectFlightPage;
 import tools.Constants;
 import tools.Constants.SERVICE_CLASS_TYPE;
 import tools.Constants.TRIP_TYPE;
-import tools.Utils.DateUtils;
-import tools.Utils.StringUtils;
+import tools.utils.DateUtils;
+import tools.utils.StringUtils;
 import unittesting.UnitTestClassBase;
 
 public class FlightFinderTest extends UnitTestClassBase {
-
 	
 	//page mapping
 	public FlightFinderPage flightFinderPage;
 	public FlightHomePage flightHomePage;
 	public SelectFlightPage selectFlightPage;
 
-	
 	//test data
 	private TRIP_TYPE flightType;
 	private String passengersNumber;
@@ -39,7 +37,7 @@ public class FlightFinderTest extends UnitTestClassBase {
 	private String arrivingIn;
 	private String arrivingMonth;
 	private String arrivingDay;
-	private SERVICE_CLASS_TYPE serviceClass;
+	private SERVICE_CLASS_TYPE serviceClassType;
 	private String airline;
 
 	@BeforeClass
@@ -64,7 +62,7 @@ public class FlightFinderTest extends UnitTestClassBase {
 		arrivingIn = "Seattle";
 		arrivingMonth = "July";
 		arrivingDay = "30";
-		serviceClass = SERVICE_CLASS_TYPE.Business;
+		serviceClassType = SERVICE_CLASS_TYPE.BUSINESS;
 		airline = "Unified Airlines";
 
 		// test config
@@ -91,7 +89,7 @@ public class FlightFinderTest extends UnitTestClassBase {
 		flightFinderPage.selectArrivingIn(arrivingIn);
 		flightFinderPage.selectArrivingMonth(arrivingMonth);
 		flightFinderPage.selectArrivingDay(arrivingDay);
-		flightFinderPage.selectServiceClass(serviceClass);
+		flightFinderPage.selectServiceClass(serviceClassType);
 		flightFinderPage.selectAirline(airline);
 		flightFinderPage.clickContinueInButton();
 

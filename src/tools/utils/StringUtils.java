@@ -1,4 +1,4 @@
-package tools.Utils;
+package tools.utils;
 
 public class StringUtils {
 
