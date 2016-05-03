@@ -39,8 +39,8 @@ public class GoogleSearchAMITest extends UnitTestClassBase {
 		browser = BrowserFactory.launch(Constants.BROWSER_TYPE);
 		googleSearchAMI = new GoogleSearchAMI(browser);
 		googleResultsListAMI = new GoogleResultsListAMI(browser);
-		searchTerm = "oban";
-		searchTermName = "Oban & Lorn Tourism Alliance";
+		searchTerm = "warp time";
+		searchTermName = "Time Warp | Definition of Time Warp";
 	}
 
 	@Test
@@ -52,7 +52,6 @@ public class GoogleSearchAMITest extends UnitTestClassBase {
 		WebElement[] elementList = googleResultsListAMI.ResultListContainer().findChildren(WebElement.class, new WebElementDescription.Builder().cssSelector("div.g").build());
 		theFor:
 		for (WebElement itemNow : elementList) {
-
 			System.out.println("itemNow: " + itemNow.getInnerText());
 			if(itemNow.getInnerText().contains(searchTermName)){
 				itemNow.click();
