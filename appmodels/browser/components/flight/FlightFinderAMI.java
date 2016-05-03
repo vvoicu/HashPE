@@ -328,90 +328,6 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 
 
 		@Override 
-		public void highlight() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().highlight();
-		}
-
-		@Override 
-		public java.lang.String getType() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getType();
-		}
-
-		@Override 
-		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getNativeObject();
-		}
-
-		@Override 
-		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0, com.hp.lft.sdk.DragAndDropArgs arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().dragAndDropOn(arg0, arg1);
-		}
-
-		@Override 
-		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().dragAndDropOn(arg0);
-		}
-
-		@Override 
-		public void click(com.hp.lft.sdk.ClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click(arg0);
-		}
-
-		@Override 
-		public void click(com.hp.lft.sdk.MouseButton arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click(arg0);
-		}
-
-		@Override 
-		public void click() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click();
-		}
-
-		@Override 
-		public java.util.Map<java.lang.String, java.lang.String> getAttributes() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getAttributes();
-		}
-
-		@Override 
-		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getVisibleText(arg0);
-		}
-
-		@Override 
-		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getVisibleText();
-		}
-
-		@Override 
-		public java.lang.String getXPath() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getXPath();
-		}
-
-		@Override 
-		public java.util.List<java.lang.String> getItems() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getItems();
-		}
-
-		@Override 
-		public java.lang.String getAttribute(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getAttribute(arg0);
-		}
-
-		@Override 
 		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getTextLocations(arg0);
@@ -421,6 +337,24 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0, java.awt.Rectangle arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getTextLocations(arg0, arg1);
+		}
+
+		@Override 
+		public java.lang.String getType() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getType();
+		}
+
+		@Override 
+		public boolean isEnabled() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().isEnabled();
+		}
+
+		@Override 
+		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getRole();
 		}
 
 		@Override 
@@ -436,63 +370,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean hasSelectedItem() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getLocation();
-		}
-
-		@Override 
-		public void fireEvent(com.hp.lft.sdk.web.EventInfo arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().fireEvent(arg0);
-		}
-
-		@Override 
-		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTitle();
-		}
-
-		@Override 
-		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getId();
-		}
-
-		@Override 
-		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTagName();
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
-		}
-
-		@Override 
-		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().highlightMatches(arg0, arg1);
-		}
-
-		@Override 
-		public java.util.Map<java.lang.String, java.lang.String> getComputedStyles() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyles();
-		}
-
-		@Override 
-		public void doubleClick(com.hp.lft.sdk.web.WebDoubleClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().doubleClick(arg0);
-		}
-
-		@Override 
-		public void doubleClick() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().doubleClick();
+			return getConcrete().hasSelectedItem();
 		}
 
 		@Override 
@@ -502,123 +382,21 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public java.lang.String getSelectedItem() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getSelectedItem();
+			return getConcrete().getVisibleText(arg0);
 		}
 
 		@Override 
-		public java.lang.String getDisplayName()  
+		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getDisplayName();
+			return getConcrete().getVisibleText();
 		}
 
 		@Override 
-		public java.lang.String getInnerHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getOuterHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getInnerHTML();
-		}
-
-		@Override 
-		public boolean hasSelectedItem() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().hasSelectedItem();
-		}
-
-		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
-		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getInnerText();
-		}
-
-		@Override 
-		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getRole();
-		}
-
-		@Override 
-		public java.lang.String getOuterText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getOuterText();
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().findChildren(arg0, arg1);
-		}
-
-		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0);
-		}
-
-		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0, arg1);
-		}
-
-		@Override 
-		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().hoverTap(arg0);
-		}
-
-		@Override 
-		public void hoverTap() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().hoverTap();
-		}
-
-		@Override 
-		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().swipe(arg0);
-		}
-
-		@Override 
-		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().swipe(arg0);
-		}
-
-		@Override 
-		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getName();
-		}
-
-		@Override 
-		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getSize();
-		}
-
-		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
-		}
-
-		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
-		}
-
-		@Override 
-		public java.lang.String getClassName() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getClassName();
+			return getConcrete().getOuterHTML();
 		}
 
 		@Override 
@@ -628,45 +406,75 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getSnapshot();
+			getConcrete().pinch(arg0);
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+			getConcrete().pinch(arg0);
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageMatch(arg0, arg1);
+			return getConcrete().getTagName();
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void click() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageMatch(arg0);
+			getConcrete().click();
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void click(com.hp.lft.sdk.MouseButton arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageMatch(arg0, arg1);
+			getConcrete().click(arg0);
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void click(com.hp.lft.sdk.ClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+			getConcrete().click(arg0);
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2, byte arg3) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2, arg3);
+			return getConcrete().getLocation();
+		}
+
+		@Override 
+		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getId();
+		}
+
+		@Override 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getComputedStyle(arg0);
+		}
+
+		@Override 
+		public java.util.List<java.lang.String> getItems() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getItems();
+		}
+
+		@Override 
+		public java.lang.String getDisplayName()  
+		{
+			return getConcrete().getDisplayName();
+		}
+
+		@Override 
+		public java.lang.String getSelectedItem() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getSelectedItem();
 		}
 
 		@Override 
@@ -676,15 +484,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getXPath() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().pan(arg0, arg1);
-		}
-
-		@Override 
-		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0);
+			return getConcrete().getXPath();
 		}
 
 		@Override 
@@ -700,21 +502,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getAttribute(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().exists();
-		}
-
-		@Override 
-		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().exists(arg0);
-		}
-
-		@Override 
-		public void setDisplayName(java.lang.String arg0)  
-		{
-			getConcrete().setDisplayName(arg0);
+			return getConcrete().getAttribute(arg0);
 		}
 
 		@Override 
@@ -724,290 +514,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public java.lang.String getOuterHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getOuterHTML();
-		}
-
-		@Override 
-		public boolean isEnabled() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().isEnabled();
-		}
-
-		@Override 
-		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pinch(arg0);
-		}
-
-		@Override 
-		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pinch(arg0);
-		}
-	}
-	
-	public abstract class ListBoxNodeBase extends AppModelNodeBase<com.hp.lft.sdk.web.ListBox, com.hp.lft.sdk.web.ListBoxDescription> implements com.hp.lft.sdk.web.ListBox
-	{		
-		public ListBoxNodeBase(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
-		{
-			super(parent, applicationModel);
-		}
-
-		
-
-
-		@Override 
-		public void highlight() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().highlight();
-		}
-
-		@Override 
-		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getNativeObject();
-		}
-
-		@Override 
-		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0, com.hp.lft.sdk.DragAndDropArgs arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().dragAndDropOn(arg0, arg1);
-		}
-
-		@Override 
-		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().dragAndDropOn(arg0);
-		}
-
-		@Override 
-		public void click(com.hp.lft.sdk.ClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click(arg0);
-		}
-
-		@Override 
-		public void click(com.hp.lft.sdk.MouseButton arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click(arg0);
-		}
-
-		@Override 
-		public void click() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click();
-		}
-
-		@Override 
-		public boolean isEnabled() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().isEnabled();
-		}
-
-		@Override 
-		public java.util.Map<java.lang.String, java.lang.String> getAttributes() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getAttributes();
-		}
-
-		@Override 
-		public void select(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().select(arg0);
-		}
-
-		@Override 
-		public void select(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().select(arg0);
-		}
-
-		@Override 
-		public void select(com.hp.lft.sdk.web.ListItem... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().select(arg0);
-		}
-
-		@Override 
-		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getVisibleText();
-		}
-
-		@Override 
-		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getVisibleText(arg0);
-		}
-
-		@Override 
-		public java.lang.String getXPath() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getXPath();
-		}
-
-		@Override 
-		public java.lang.String getAttribute(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getAttribute(arg0);
-		}
-
-		@Override 
-		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0, java.awt.Rectangle arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTextLocations(arg0, arg1);
-		}
-
-		@Override 
-		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTextLocations(arg0);
-		}
-
-		@Override 
-		public void longPress(com.hp.lft.sdk.web.WebLongPressArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().longPress(arg0);
-		}
-
-		@Override 
-		public void longPress() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().longPress();
-		}
-
-		@Override 
-		public void fireEvent(com.hp.lft.sdk.web.EventInfo arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().fireEvent(arg0);
-		}
-
-		@Override 
-		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getLocation();
-		}
-
-		@Override 
-		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTitle();
-		}
-
-		@Override 
-		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTagName();
-		}
-
-		@Override 
-		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getId();
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
-		}
-
-		@Override 
-		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().highlightMatches(arg0, arg1);
-		}
-
-		@Override 
-		public java.util.Map<java.lang.String, java.lang.String> getComputedStyles() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyles();
-		}
-
-		@Override 
-		public void doubleClick(com.hp.lft.sdk.web.WebDoubleClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().doubleClick(arg0);
-		}
-
-		@Override 
-		public void doubleClick() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().doubleClick();
-		}
-
-		@Override 
-		public java.lang.String getCSSSelector() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getCSSSelector();
-		}
-
-		@Override 
-		public java.lang.String getDisplayName()  
-		{
-			return getConcrete().getDisplayName();
-		}
-
-		@Override 
-		public java.lang.String getInnerHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getInnerHTML();
-		}
-
-		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
-		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getInnerText();
-		}
-
-		@Override 
-		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getRole();
-		}
-
-		@Override 
-		public java.util.List<com.hp.lft.sdk.web.ListItem> getItems() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getItems();
-		}
-
-		@Override 
-		public java.util.List<com.hp.lft.sdk.web.ListItem> getSelectedItems() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getSelectedItems();
-		}
-
-		@Override 
-		public java.lang.String getOuterText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getOuterText();
-		}
-
-		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0);
-		}
-
-		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0, arg1);
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().findChildren(arg0, arg1);
+			getConcrete().hoverTap(arg0);
 		}
 
 		@Override 
@@ -1017,15 +526,57 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.util.Map<java.lang.String, java.lang.String> getAttributes() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().hoverTap(arg0);
+			return getConcrete().getAttributes();
 		}
 
 		@Override 
-		public int getVisibleItemsCount() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void highlight() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getVisibleItemsCount();
+			getConcrete().highlight();
+		}
+
+		@Override 
+		public java.lang.String getInnerHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getInnerHTML();
+		}
+
+		@Override 
+		public java.lang.String getClassName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getClassName();
+		}
+
+		@Override 
+		public void setDisplayName(java.lang.String arg0)  
+		{
+			getConcrete().setDisplayName(arg0);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0, arg1);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0);
+		}
+
+		@Override 
+		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().dragAndDropOn(arg0);
+		}
+
+		@Override 
+		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0, com.hp.lft.sdk.DragAndDropArgs arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().dragAndDropOn(arg0, arg1);
 		}
 
 		@Override 
@@ -1041,63 +592,45 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.util.Map<java.lang.String, java.lang.String> getComputedStyles() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getName();
+			return getConcrete().getComputedStyles();
 		}
 
 		@Override 
-		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void doubleClick() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getSize();
+			getConcrete().doubleClick();
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void doubleClick(com.hp.lft.sdk.web.WebDoubleClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().describe(arg0, arg1);
+			getConcrete().doubleClick(arg0);
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().describe(arg0, arg1);
+			return getConcrete().exists();
 		}
 
 		@Override 
-		public java.lang.String getClassName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getClassName();
+			return getConcrete().exists(arg0);
 		}
 
 		@Override 
-		public com.hp.lft.sdk.web.ListItem getItem(java.lang.String arg0)  
+		public java.lang.String getOuterText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getItem(arg0);
+			return getConcrete().getOuterText();
 		}
 
 		@Override 
-		public java.lang.String getDefaultValue() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getDefaultValue();
-		}
-
-		@Override 
-		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getSnapshot();
-		}
-
-		@Override 
-		public java.lang.String getType() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getType();
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+			return getConcrete().getNativeObject();
 		}
 
 		@Override 
@@ -1110,6 +643,12 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
 
 		@Override 
@@ -1131,15 +670,33 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public java.awt.Point getAbsoluteLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
 		{
-			return getConcrete().getAbsoluteLocation();
+			return getConcrete().findChildren(arg0, arg1);
 		}
 
 		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().pan(arg0, arg1);
+			return getConcrete().getName();
+		}
+
+		@Override 
+		public void fireEvent(com.hp.lft.sdk.web.EventInfo arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().fireEvent(arg0);
+		}
+
+		@Override 
+		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getSize();
+		}
+
+		@Override 
+		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		{
+			return getConcrete().highlightMatches(arg0, arg1);
 		}
 
 		@Override 
@@ -1149,51 +706,110 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
-		public void deselect(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().deselect(arg0);
+			getConcrete().pan(arg0, arg1);
 		}
 
 		@Override 
-		public void deselect(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().deselect(arg0);
+			return getConcrete().getInnerText();
 		}
 
 		@Override 
-		public void deselect(com.hp.lft.sdk.web.ListItem... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().deselect(arg0);
+			return getConcrete().getSnapshot();
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().exists();
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().exists(arg0);
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public void setDisplayName(java.lang.String arg0)  
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().setDisplayName(arg0);
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public boolean isMultiple() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().isMultiple();
+			return getConcrete().getTitle();
+		}
+	}
+	
+	public abstract class ListBoxNodeBase extends AppModelNodeBase<com.hp.lft.sdk.web.ListBox, com.hp.lft.sdk.web.ListBoxDescription> implements com.hp.lft.sdk.web.ListBox
+	{		
+		public ListBoxNodeBase(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
+		{
+			super(parent, applicationModel);
+		}
+
+		
+
+
+		@Override 
+		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getTextLocations(arg0);
 		}
 
 		@Override 
-		public boolean isVisible() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0, java.awt.Rectangle arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().isVisible();
+			return getConcrete().getTextLocations(arg0, arg1);
+		}
+
+		@Override 
+		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getRole();
+		}
+
+		@Override 
+		public int getVisibleItemsCount() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getVisibleItemsCount();
+		}
+
+		@Override 
+		public void longPress() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().longPress();
+		}
+
+		@Override 
+		public void longPress(com.hp.lft.sdk.web.WebLongPressArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().longPress(arg0);
+		}
+
+		@Override 
+		public java.lang.String getCSSSelector() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getCSSSelector();
+		}
+
+		@Override 
+		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getVisibleText(arg0);
+		}
+
+		@Override 
+		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getVisibleText();
 		}
 
 		@Override 
@@ -1215,9 +831,393 @@ public class FlightFinderAMI extends AppModelBase {		private TripTypeOneWay Trip
 		}
 
 		@Override 
+		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getTagName();
+		}
+
+		@Override 
+		public void click() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().click();
+		}
+
+		@Override 
+		public void click(com.hp.lft.sdk.MouseButton arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().click(arg0);
+		}
+
+		@Override 
+		public void click(com.hp.lft.sdk.ClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().click(arg0);
+		}
+
+		@Override 
+		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getLocation();
+		}
+
+		@Override 
+		public boolean isEnabled() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().isEnabled();
+		}
+
+		@Override 
+		public java.lang.String getType() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getType();
+		}
+
+		@Override 
+		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getId();
+		}
+
+		@Override 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getComputedStyle(arg0);
+		}
+
+		@Override 
+		public com.hp.lft.sdk.web.ListItem getItem(java.lang.String arg0)  
+		{
+			return getConcrete().getItem(arg0);
+		}
+
+		@Override 
+		public java.lang.String getDefaultValue() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getDefaultValue();
+		}
+
+		@Override 
+		public java.lang.String getDisplayName()  
+		{
+			return getConcrete().getDisplayName();
+		}
+
+		@Override 
+		public void select(com.hp.lft.sdk.web.ListItem... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().select(arg0);
+		}
+
+		@Override 
+		public void select(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().select(arg0);
+		}
+
+		@Override 
+		public void select(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().select(arg0);
+		}
+
+		@Override 
+		public java.awt.Point getAbsoluteLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getAbsoluteLocation();
+		}
+
+		@Override 
+		public java.lang.String getXPath() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getXPath();
+		}
+
+		@Override 
+		public java.lang.String getAttribute(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getAttribute(arg0);
+		}
+
+		@Override 
+		public java.util.List<com.hp.lft.sdk.web.ListItem> getItems() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getItems();
+		}
+
+		@Override 
+		public boolean isMultiple() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().isMultiple();
+		}
+
+		@Override 
+		public boolean isVisible() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().isVisible();
+		}
+
+		@Override 
+		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().hoverTap(arg0);
+		}
+
+		@Override 
+		public void hoverTap() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().hoverTap();
+		}
+
+		@Override 
+		public java.util.Map<java.lang.String, java.lang.String> getAttributes() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getAttributes();
+		}
+
+		@Override 
+		public void highlight() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().highlight();
+		}
+
+		@Override 
+		public java.lang.String getInnerHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getInnerHTML();
+		}
+
+		@Override 
+		public java.lang.String getClassName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getClassName();
+		}
+
+		@Override 
+		public void setDisplayName(java.lang.String arg0)  
+		{
+			getConcrete().setDisplayName(arg0);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0, arg1);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0);
+		}
+
+		@Override 
+		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().dragAndDropOn(arg0);
+		}
+
+		@Override 
+		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0, com.hp.lft.sdk.DragAndDropArgs arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().dragAndDropOn(arg0, arg1);
+		}
+
+		@Override 
+		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().swipe(arg0);
+		}
+
+		@Override 
+		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().swipe(arg0);
+		}
+
+		@Override 
+		public java.util.Map<java.lang.String, java.lang.String> getComputedStyles() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getComputedStyles();
+		}
+
+		@Override 
 		public java.lang.String getValue() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getValue();
+		}
+
+		@Override 
+		public void deselect(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().deselect(arg0);
+		}
+
+		@Override 
+		public void deselect(com.hp.lft.sdk.web.ListItem... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().deselect(arg0);
+		}
+
+		@Override 
+		public void deselect(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().deselect(arg0);
+		}
+
+		@Override 
+		public void doubleClick() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().doubleClick();
+		}
+
+		@Override 
+		public void doubleClick(com.hp.lft.sdk.web.WebDoubleClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().doubleClick(arg0);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
+		}
+
+		@Override 
+		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public java.lang.String getOuterText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getOuterText();
+		}
+
+		@Override 
+		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getNativeObject();
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2, byte arg3) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2, arg3);
+		}
+
+		@Override 
+		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		{
+			return getConcrete().findChildren(arg0, arg1);
+		}
+
+		@Override 
+		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getName();
+		}
+
+		@Override 
+		public void fireEvent(com.hp.lft.sdk.web.EventInfo arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().fireEvent(arg0);
+		}
+
+		@Override 
+		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getSize();
+		}
+
+		@Override 
+		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		{
+			return getConcrete().highlightMatches(arg0, arg1);
+		}
+
+		@Override 
+		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pan(arg0);
+		}
+
+		@Override 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pan(arg0, arg1);
+		}
+
+		@Override 
+		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getInnerText();
+		}
+
+		@Override 
+		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getSnapshot();
+		}
+
+		@Override 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().describe(arg0, arg1);
+		}
+
+		@Override 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().describe(arg0, arg1);
+		}
+
+		@Override 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().describe(arg0, arg1);
+		}
+
+		@Override 
+		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getTitle();
+		}
+
+		@Override 
+		public java.util.List<com.hp.lft.sdk.web.ListItem> getSelectedItems() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getSelectedItems();
 		}
 	}
 }

@@ -18,7 +18,7 @@ public class Constants {
 	public enum TRIP_TYPE { ROUND_TRIP, ONE_WAY};
 	
 	//Google Site Contant URL
-	public static final String CHROME_BASE_URL = "https://www.google.com/ncr";
+	public static final String GOOGLE_BASE_URL = "https://www.google.com/ncr";
 	
 	//WebDriver Browser type Constants
 	public enum DRIVER_TYPE { FIREFOX, };
