@@ -21,5 +21,14 @@
                 </object>
             </children>
         </object>
+        <object type="Button" technology="Web">
+            <name>Google Search</name>
+            <codeName>GoogleSearchButton</codeName>
+            <identification>
+                <properties>
+                    <property name="CSSSelector" type="string" isRegExp="false">button.lsb</property>
+                </properties>
+            </identification>
+        </object>
     </objects>
 </applicationModel>

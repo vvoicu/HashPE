@@ -1,4 +1,6 @@
 eclipse.preferences.version=1
+encoding//appmodels/browser/components/google/GoogleResultsListAMI.java=UTF-8
 encoding//appmodels/browser/components/google/GoogleSearchAMI.java=UTF-8
+encoding//src/browser/components/google/GoogleResultsListAMI.tsrx=UTF-8
 encoding//src/browser/components/google/GoogleSearchAMI.tsrx=UTF-8
 encoding//src/tests/browser/ami/google/GoogleSearchAMITest.java=UTF-8

@@ -18,6 +18,7 @@ import browser.pages.flight.FlightFinderPage;
 import browser.pages.flight.FlightHomePage;
 import browser.pages.flight.SelectFlightPage;
 import tools.Constants;
+import tools.Constants.SERVICE_CLASS_TYPE;
 import tools.Constants.TRIP_TYPE;
 import tools.Utils.StringUtils;
 import tools.models.flight.CustomerModel;
@@ -41,7 +42,7 @@ public class BookAFlightTest extends UnitTestClassBase {
 	private String arrivingIn;
 	private String arrivingMonth;
 	private String arrivingDay;
-	private String serviceClass;
+	private SERVICE_CLASS_TYPE serviceClass;
 	private String airline;
 //	private String passenger1FirstName;
 //	private String passenger2FirstName;
@@ -75,7 +76,7 @@ public class BookAFlightTest extends UnitTestClassBase {
 		arrivingIn = "Seattle";
 		arrivingMonth = "July";
 		arrivingDay = "30";
-		serviceClass = "Business";
+		serviceClass = SERVICE_CLASS_TYPE.Business;
 		airline = "Unified Airlines";
 
 		cardNumber = "1234123412341234";

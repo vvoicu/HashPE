@@ -93,17 +93,17 @@ public class FlightFinderPage extends BrowserAbstractPage {
 				.select(arrivingDay);
 	}
 
-	public void selectServiceClass(String serviceClass) throws GeneralLeanFtException {
-		switch (serviceClass) {
-		case "Economy":
+	public void selectServiceClass(Constants.SERVICE_CLASS_TYPE serviceClassType ) throws GeneralLeanFtException {
+		switch (serviceClassType) {
+		case Economy:
 			browser.describe(RadioGroup.class,
 					new RadioGroupDescription.Builder().cssSelector(serviceEconomyClass).build()).select("Coach");
 			break;
-		case "Business":
+		case Business:
 			browser.describe(RadioGroup.class,
 					new RadioGroupDescription.Builder().cssSelector(serviceBussinessClass).build()).select("Business");
 			break;
-		case "First":
+		case First:
 			browser.describe(RadioGroup.class,
 					new RadioGroupDescription.Builder().cssSelector(serviceFirstClass).build()).select("First");
 			break;
