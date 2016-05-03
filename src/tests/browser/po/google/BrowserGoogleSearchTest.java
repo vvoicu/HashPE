@@ -22,6 +22,8 @@ public class BrowserGoogleSearchTest extends UnitTestClassBase {
 	public GoogleHomePage googleHomePage;
 	public GoogleSearchPage googleSearchPage;
 
+	private String searchTermLink;
+
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 		instance = new BrowserGoogleSearchTest();
@@ -38,7 +40,8 @@ public class BrowserGoogleSearchTest extends UnitTestClassBase {
 	public void setUp() throws Exception {
 		//test data
 		searchTerm = "evozon";
-
+		searchTermLink = "Evozon Systems - Hybris";
+		
 		//test config
 		browser = BrowserFactory.launch(Constants.BROWSER_TYPE);
 		googleHomePage = new GoogleHomePage(browser);
@@ -51,7 +54,7 @@ public class BrowserGoogleSearchTest extends UnitTestClassBase {
 		googleHomePage.navigateTo(Constants.GOOGLE_BASE_URL);
 		googleHomePage.inputSearchTerm(searchTerm);
 		googleHomePage.clickOnSearchButton();
-		googleSearchPage.grabResultList();
+		googleSearchPage.grabResultList(searchTermLink);
 		// Assert.assertTrue("Something is good",false);
 
 	}
