@@ -7,6 +7,8 @@ import org.junit.Test;
 
 import com.hp.lft.sdk.GeneralLeanFtException;
 import com.hp.lft.sdk.web.BrowserFactory;
+import com.hp.lft.sdk.web.WebElement;
+import com.hp.lft.sdk.web.WebElementDescription;
 
 import browser.components.google.GoogleResultsListAMI;
 import browser.components.google.GoogleSearchAMI;
@@ -38,21 +40,25 @@ public class GoogleSearchAMITest extends UnitTestClassBase {
 		googleSearchAMI = new GoogleSearchAMI(browser);
 		googleResultsListAMI = new GoogleResultsListAMI(browser);
 		searchTerm = "oban";
-		searchTermName = "Oban & Lorn Tourism Alliance :: Home";
+		searchTermName = "Oban & Lorn Tourism Alliance";
 	}
 
 	@Test
-	public void test() throws GeneralLeanFtException {
+	public void test() throws GeneralLeanFtException, CloneNotSupportedException {
 
 		browser.navigate(Constants.GOOGLE_BASE_URL);
 		googleSearchAMI.GooglePage().SearchEditField().setValue(searchTerm);
 		googleSearchAMI.GoogleSearchButton().click();
+		WebElement[] elementList = googleResultsListAMI.ResultListContainer().findChildren(WebElement.class, new WebElementDescription.Builder().cssSelector("div.g").build());
+		theFor:
+		for (WebElement itemNow : elementList) {
 
-		// googleResultsListAMI.ResultListContainer().
-//		int listCount = new ListBoxDescription.Builder().cssSelector("div#res *").build().getItemsCount();
-
-//		System.out.println("List Count: " + listCount);
-		// browser.describe(ListBox.class, );
+			System.out.println("itemNow: " + itemNow.getInnerText());
+			if(itemNow.getInnerText().contains(searchTermName)){
+				itemNow.click();
+				break theFor;
+			}
+		}
 
 	}
 
