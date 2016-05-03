@@ -19,14 +19,12 @@ public class GoogleSearchPage extends BrowserAbstractPage {
         browser.highlightMatches(WebElement.class, new WebElementDescription.Builder().cssSelector(resultListContainerSelector).build());
         WebElement[] elementList = browser.findChildren(WebElement.class, new WebElementDescription.Builder().cssSelector(resultListContainerSelector).build());
         
-//        System.out.println("Link counter: " + elementList.length);
 		theFor:
 		for (WebElement itemNow : elementList) {
 			if(itemNow.getInnerText().contains(searchTerm)){
 				itemNow.click();
 				break theFor;
 			}
-//			System.out.println("itemNow: " + itemNow.getInnerText());
 		}
 	}
 

@@ -55,8 +55,6 @@ public class BrowserGoogleSearchTest extends UnitTestClassBase {
 		googleHomePage.inputSearchTerm(searchTerm);
 		googleHomePage.clickOnSearchButton();
 		googleSearchPage.grabResultList(searchTermLink);
-		// Assert.assertTrue("Something is good",false);
-
 	}
 
 }

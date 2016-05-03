@@ -18,8 +18,9 @@ import unittesting.UnitTestClassBase;
 public class GoogleSearchAMITest extends UnitTestClassBase {
 
 	private GoogleSearchAMI googleSearchAMI;
-	private String searchTerm;
 	private GoogleResultsListAMI googleResultsListAMI;
+
+	private String searchTerm;
 	private String searchTermName;
 
 	@BeforeClass
@@ -49,6 +50,8 @@ public class GoogleSearchAMITest extends UnitTestClassBase {
 		browser.navigate(Constants.GOOGLE_BASE_URL);
 		googleSearchAMI.GooglePage().SearchEditField().setValue(searchTerm);
 		googleSearchAMI.GoogleSearchButton().click();
+		
+		//functionality related to search result list
 		WebElement[] elementList = googleResultsListAMI.ResultListContainer().findChildren(WebElement.class, new WebElementDescription.Builder().cssSelector("div.g").build());
 		theFor:
 		for (WebElement itemNow : elementList) {
