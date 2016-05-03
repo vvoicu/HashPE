@@ -5,23 +5,10 @@
     <objects>
         <object type="RadioGroup" technology="Web">
             <name>oneway</name>
-            <codeName>TripTypeOneWay</codeName>
+            <codeName>TripType</codeName>
             <identification>
                 <properties>
                     <property name="Type" type="string" isRegExp="false">radio</property>
-                    <property name="SelectedItem" type="string" isRegExp="false">oneway</property>
-                    <property name="TagName" type="string" isRegExp="false">INPUT</property>
-                    <property name="Name" type="string" isRegExp="false">tripType</property>
-                </properties>
-            </identification>
-        </object>
-        <object type="RadioGroup" technology="Web">
-            <name>roundtrip</name>
-            <codeName>TripTypeRoundTrip</codeName>
-            <identification>
-                <properties>
-                    <property name="Type" type="string" isRegExp="false">radio</property>
-                    <property name="SelectedItem" type="string" isRegExp="false">roundtrip</property>
                     <property name="TagName" type="string" isRegExp="false">INPUT</property>
                     <property name="Name" type="string" isRegExp="false">tripType</property>
                 </properties>

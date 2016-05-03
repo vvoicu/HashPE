@@ -96,33 +96,9 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 
 
 		@Override 
-		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Point getAbsoluteLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getTextLocations(arg0);
-		}
-
-		@Override 
-		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0, java.awt.Rectangle arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTextLocations(arg0, arg1);
-		}
-
-		@Override 
-		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTitle();
-		}
-
-		@Override 
-		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getVisibleText(arg0);
-		}
-
-		@Override 
-		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getVisibleText();
+			return getConcrete().getAbsoluteLocation();
 		}
 
 		@Override 
@@ -132,9 +108,21 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public void setDisplayName(java.lang.String arg0)  
+		public java.lang.String getURL() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().setDisplayName(arg0);
+			return getConcrete().getURL();
+		}
+
+		@Override 
+		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getNativeObject();
+		}
+
+		@Override 
+		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		{
+			return getConcrete().findChildren(arg0, arg1);
 		}
 
 		@Override 
@@ -150,117 +138,15 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public java.lang.String getURL() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getURL();
+			return getConcrete().getVisibleText();
 		}
 
 		@Override 
-		public java.lang.String runJavaScript(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().runJavaScript(arg0);
-		}
-
-		@Override 
-		public <TResult> TResult runJavaScript(java.lang.String arg0, java.lang.Class<TResult> arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().runJavaScript(arg0, arg1);
-		}
-
-		@Override 
-		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getSize();
-		}
-
-		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().exists();
-		}
-
-		@Override 
-		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().exists(arg0);
-		}
-
-		@Override 
-		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getNativeObject();
-		}
-
-		@Override 
-		public java.awt.Point getAbsoluteLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getAbsoluteLocation();
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2, byte arg3) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2, arg3);
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().findChildren(arg0, arg1);
-		}
-
-		@Override 
-		public java.lang.String getDisplayName()  
-		{
-			return getConcrete().getDisplayName();
-		}
-
-		@Override 
-		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().highlightMatches(arg0, arg1);
-		}
-
-		@Override 
-		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getSnapshot();
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
+			return getConcrete().getVisibleText(arg0);
 		}
 
 		@Override 
@@ -286,17 +172,6 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		{
 			getConcrete().sync();
 		}
-	}
-	
-	public abstract class WebElementNodeBase extends AppModelNodeBase<com.hp.lft.sdk.web.WebElement, com.hp.lft.sdk.web.WebElementDescription> implements com.hp.lft.sdk.web.WebElement
-	{		
-		public WebElementNodeBase(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
-		{
-			super(parent, applicationModel);
-		}
-
-		
-
 
 		@Override 
 		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
@@ -311,27 +186,164 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getRole();
+			return getConcrete().getTitle();
 		}
 
 		@Override 
-		public void longPress() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().longPress();
+			return getConcrete().getSnapshot();
 		}
 
 		@Override 
-		public void longPress(com.hp.lft.sdk.web.WebLongPressArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().longPress(arg0);
+			return getConcrete().getSize();
 		}
 
 		@Override 
-		public java.lang.String getCSSSelector() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getCSSSelector();
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2, byte arg3) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2, arg3);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public java.lang.String runJavaScript(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().runJavaScript(arg0);
+		}
+
+		@Override 
+		public <TResult> TResult runJavaScript(java.lang.String arg0, java.lang.Class<TResult> arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().runJavaScript(arg0, arg1);
+		}
+
+		@Override 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().describe(arg0, arg1);
+		}
+
+		@Override 
+		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		{
+			return getConcrete().highlightMatches(arg0, arg1);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
+		}
+
+		@Override 
+		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public void setDisplayName(java.lang.String arg0)  
+		{
+			getConcrete().setDisplayName(arg0);
+		}
+
+		@Override 
+		public java.lang.String getDisplayName()  
+		{
+			return getConcrete().getDisplayName();
+		}
+	}
+	
+	public abstract class WebElementNodeBase extends AppModelNodeBase<com.hp.lft.sdk.web.WebElement, com.hp.lft.sdk.web.WebElementDescription> implements com.hp.lft.sdk.web.WebElement
+	{		
+		public WebElementNodeBase(TestObject parent, AppModelBase applicationModel) throws GeneralLeanFtException
+		{
+			super(parent, applicationModel);
+		}
+
+		
+
+
+		@Override 
+		public void highlight() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().highlight();
+		}
+
+		@Override 
+		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getNativeObject();
+		}
+
+		@Override 
+		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0, com.hp.lft.sdk.DragAndDropArgs arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().dragAndDropOn(arg0, arg1);
+		}
+
+		@Override 
+		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().dragAndDropOn(arg0);
+		}
+
+		@Override 
+		public void click(com.hp.lft.sdk.ClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().click(arg0);
+		}
+
+		@Override 
+		public void click(com.hp.lft.sdk.MouseButton arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().click(arg0);
+		}
+
+		@Override 
+		public void click() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().click();
+		}
+
+		@Override 
+		public java.util.Map<java.lang.String, java.lang.String> getAttributes() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getAttributes();
 		}
 
 		@Override 
@@ -347,78 +359,6 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public java.lang.String getOuterHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getOuterHTML();
-		}
-
-		@Override 
-		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pinch(arg0);
-		}
-
-		@Override 
-		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pinch(arg0);
-		}
-
-		@Override 
-		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTagName();
-		}
-
-		@Override 
-		public void click() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click();
-		}
-
-		@Override 
-		public void click(com.hp.lft.sdk.MouseButton arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click(arg0);
-		}
-
-		@Override 
-		public void click(com.hp.lft.sdk.ClickArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().click(arg0);
-		}
-
-		@Override 
-		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getLocation();
-		}
-
-		@Override 
-		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getId();
-		}
-
-		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
-		public java.lang.String getDisplayName()  
-		{
-			return getConcrete().getDisplayName();
-		}
-
-		@Override 
-		public java.awt.Point getAbsoluteLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getAbsoluteLocation();
-		}
-
-		@Override 
 		public java.lang.String getXPath() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getXPath();
@@ -431,87 +371,69 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public boolean isVisible() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().isVisible();
+			return getConcrete().getTextLocations(arg0);
 		}
 
 		@Override 
-		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0, java.awt.Rectangle arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().hoverTap(arg0);
+			return getConcrete().getTextLocations(arg0, arg1);
 		}
 
 		@Override 
-		public void hoverTap() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void longPress(com.hp.lft.sdk.web.WebLongPressArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().hoverTap();
+			getConcrete().longPress(arg0);
 		}
 
 		@Override 
-		public java.util.Map<java.lang.String, java.lang.String> getAttributes() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void longPress() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getAttributes();
+			getConcrete().longPress();
 		}
 
 		@Override 
-		public void highlight() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void fireEvent(com.hp.lft.sdk.web.EventInfo arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().highlight();
+			getConcrete().fireEvent(arg0);
 		}
 
 		@Override 
-		public java.lang.String getInnerHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getInnerHTML();
+			return getConcrete().getLocation();
 		}
 
 		@Override 
-		public java.lang.String getClassName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getClassName();
+			return getConcrete().getTitle();
 		}
 
 		@Override 
-		public void setDisplayName(java.lang.String arg0)  
+		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().setDisplayName(arg0);
+			return getConcrete().getId();
 		}
 
 		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageExists(arg0, arg1);
+			return getConcrete().getTagName();
 		}
 
 		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().verifyImageExists(arg0);
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
 		{
-			getConcrete().dragAndDropOn(arg0);
-		}
-
-		@Override 
-		public void dragAndDropOn(com.hp.lft.sdk.SupportDragAndDrop arg0, com.hp.lft.sdk.DragAndDropArgs arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().dragAndDropOn(arg0, arg1);
-		}
-
-		@Override 
-		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().swipe(arg0);
-		}
-
-		@Override 
-		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().swipe(arg0);
+			return getConcrete().highlightMatches(arg0, arg1);
 		}
 
 		@Override 
@@ -533,105 +455,27 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getCSSSelector() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().exists();
+			return getConcrete().getCSSSelector();
 		}
 
 		@Override 
-		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getDisplayName()  
 		{
-			return getConcrete().exists(arg0);
+			return getConcrete().getDisplayName();
 		}
 
 		@Override 
-		public java.lang.String getOuterText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getInnerHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getOuterText();
+			return getConcrete().getInnerHTML();
 		}
 
 		@Override 
-		public com.hp.lft.sdk.NativeObject getNativeObject() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getNativeObject();
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2, byte arg3) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2, arg3);
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().findChildren(arg0, arg1);
-		}
-
-		@Override 
-		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getName();
-		}
-
-		@Override 
-		public void fireEvent(com.hp.lft.sdk.web.EventInfo arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().fireEvent(arg0);
-		}
-
-		@Override 
-		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getSize();
-		}
-
-		@Override 
-		public <TChild extends TestObject> int highlightMatches(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
-		{
-			return getConcrete().highlightMatches(arg0, arg1);
-		}
-
-		@Override 
-		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0);
-		}
-
-		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0, arg1);
+			return getConcrete().getComputedStyle(arg0);
 		}
 
 		@Override 
@@ -641,13 +485,73 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getSnapshot();
+			return getConcrete().getRole();
 		}
 
 		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getOuterText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getOuterText();
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0, arg1);
+		}
+
+		@Override 
+		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		{
+			return getConcrete().findChildren(arg0, arg1);
+		}
+
+		@Override 
+		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().hoverTap(arg0);
+		}
+
+		@Override 
+		public void hoverTap() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().hoverTap();
+		}
+
+		@Override 
+		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().swipe(arg0);
+		}
+
+		@Override 
+		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().swipe(arg0);
+		}
+
+		@Override 
+		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getName();
+		}
+
+		@Override 
+		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getSize();
+		}
+
+		@Override 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
@@ -659,15 +563,111 @@ public class GoogleResultsListAMI extends AppModelBase {		private SdasdGoogleSea
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getClassName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().describe(arg0, arg1);
+			return getConcrete().getClassName();
 		}
 
 		@Override 
-		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.image.RenderedImage getSnapshot() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getTitle();
+			return getConcrete().getSnapshot();
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2, byte arg3) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2, arg3);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
+		}
+
+		@Override 
+		public java.awt.Point getAbsoluteLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getAbsoluteLocation();
+		}
+
+		@Override 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pan(arg0, arg1);
+		}
+
+		@Override 
+		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pan(arg0);
+		}
+
+		@Override 
+		public void setDisplayName(java.lang.String arg0)  
+		{
+			getConcrete().setDisplayName(arg0);
+		}
+
+		@Override 
+		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
+		}
+
+		@Override 
+		public boolean isVisible() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().isVisible();
+		}
+
+		@Override 
+		public java.lang.String getOuterHTML() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getOuterHTML();
+		}
+
+		@Override 
+		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pinch(arg0);
+		}
+
+		@Override 
+		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pinch(arg0);
 		}
 	}
 }

@@ -52,9 +52,11 @@ public class FlightAmiLoginTest extends UnitTestClassBase {
 		loginAMI.PasswordEditField().setValue(userPass);
 		loginAMI.SignInImage().click();
 		
-		flightFinderAMI.TripTypeOneWay().click();
-		flightFinderAMI.TripTypeRoundTrip().click();
-		flightFinderAMI.TripTypeOneWay().click();
+		flightFinderAMI.TripType().select("oneway");
+		flightFinderAMI.TripType().select("roundtrip");
+		flightFinderAMI.TripType().select("oneway");
+
+		//		flightFinderAMI.TripTypeOneWay().click();
 //		FlightFinderAMI.
 	}
 
