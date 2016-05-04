@@ -15,8 +15,8 @@ import browser.pages.flight.FlightHomePage;
 import browser.pages.flight.ProfilePage;
 import browser.pages.flight.RegisterPage;
 import tools.Constants;
-import tools.RandomStringGenerator;
-import tools.RandomStringGenerator.Mode;
+import tools.FieldGenerator;
+import tools.FieldGenerator.Mode;
 import unittesting.UnitTestClassBase;
 
 public class RegisterTest extends UnitTestClassBase{
@@ -57,15 +57,15 @@ public class RegisterTest extends UnitTestClassBase{
 		//test data
 		firstName = "TestingFirstName";
 		lastName = "TestingLastName";
-		phoneNumber = "+(40) " + RandomStringGenerator.generateRandomString(9, Mode.NUMERIC);
-		email = RandomStringGenerator.generateRandomString(6,Mode.ALPHANUMERICSCHAR) + "@m.com";
+		phoneNumber = "+(40) " + FieldGenerator.generateRandomString(9, Mode.NUMERIC);
+		email = FieldGenerator.generateRandomString(6,Mode.ALPHANUMERICSCHAR) + "@m.com";
 		address1 = "Testing Address1";
 		address2 = "Testing Address2";
 		cityName = "Cluj-Napoca";
 		stateName = "Cluj";
-		postalCode = RandomStringGenerator.generateRandomString(6, Mode.NUMERIC);
+		postalCode = FieldGenerator.generateRandomString(6, Mode.NUMERIC);
 		country = "ROMANIA";
-		userName = RandomStringGenerator.generateRandomString(6, Mode.ALPHA);
+		userName = FieldGenerator.generateRandomString(6, Mode.ALPHA);
 		password = "Testing123";
 		confirmPassword = "Testing123";
 //		profileFirstName = RandomStringGenerator.generateRandomString(6, Mode.ALPHA);		
