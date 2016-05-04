@@ -3,12 +3,9 @@ package tools;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.security.SecureRandom;
 import java.util.Properties;
 
 public class FieldGenerator {
-
-	public static SecureRandom random = new SecureRandom();
 
 	public static enum Mode {
 		ALPHA, ALPHANUMERIC, NUMERIC, ALPHANUMERICSCHAR
