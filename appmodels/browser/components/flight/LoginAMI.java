@@ -191,9 +191,9 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getDefaultValue() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getVisibleText();
+			return getConcrete().getDefaultValue();
 		}
 
 		@Override 
@@ -203,9 +203,9 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.lang.String getDefaultValue() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getDefaultValue();
+			return getConcrete().getVisibleText();
 		}
 
 		@Override 
@@ -269,9 +269,9 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getTagName();
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
@@ -281,9 +281,9 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().describe(arg0, arg1);
+			return getConcrete().getTagName();
 		}
 
 		@Override 
@@ -311,15 +311,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.lang.String getValue() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getValue();
-		}
-
-		@Override 
 		public int getRowsCount() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getRowsCount();
+		}
+
+		@Override 
+		public java.lang.String getValue() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getValue();
 		}
 
 		@Override 
@@ -341,15 +341,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
 		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getInnerText();
+		}
+
+		@Override 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getComputedStyle(arg0);
 		}
 
 		@Override 
@@ -371,15 +371,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0);
-		}
-
-		@Override 
 		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageExists(arg0, arg1);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0);
 		}
 
 		@Override 
@@ -401,6 +401,12 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
+		public int getMaxCharsInLine() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getMaxCharsInLine();
+		}
+
+		@Override 
 		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().swipe(arg0);
@@ -410,12 +416,6 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().swipe(arg0);
-		}
-
-		@Override 
-		public int getMaxCharsInLine() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getMaxCharsInLine();
 		}
 
 		@Override 
@@ -437,13 +437,13 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
@@ -461,15 +461,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
 		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
 
 		@Override 
@@ -485,7 +485,7 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
@@ -503,27 +503,27 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0, arg1);
-		}
-
-		@Override 
 		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pan(arg0);
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().exists();
+			getConcrete().pan(arg0, arg1);
 		}
 
 		@Override 
 		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
 		}
 
 		@Override 
@@ -551,13 +551,13 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
 
 		@Override 
-		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
@@ -700,6 +700,12 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().describe(arg0, arg1);
+		}
+
+		@Override 
 		public java.lang.String getId() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getId();
@@ -709,12 +715,6 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getTagName();
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
@@ -766,15 +766,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
 		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getInnerText();
+		}
+
+		@Override 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getComputedStyle(arg0);
 		}
 
 		@Override 
@@ -790,15 +790,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0);
-		}
-
-		@Override 
 		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageExists(arg0, arg1);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0);
 		}
 
 		@Override 
@@ -820,21 +820,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().swipe(arg0);
-		}
-
-		@Override 
 		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().swipe(arg0);
 		}
 
 		@Override 
-		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getName();
+			getConcrete().swipe(arg0);
 		}
 
 		@Override 
@@ -844,19 +838,25 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
+		public java.lang.String getName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getName();
+		}
+
+		@Override 
 		public java.awt.Dimension getSize() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getSize();
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
@@ -880,15 +880,15 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
 		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
 
 		@Override 
@@ -904,7 +904,7 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
@@ -922,27 +922,27 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0, arg1);
-		}
-
-		@Override 
 		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pan(arg0);
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().exists();
+			getConcrete().pan(arg0, arg1);
 		}
 
 		@Override 
 		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
 		}
 
 		@Override 
@@ -964,13 +964,13 @@ public class LoginAMI extends AppModelBase {		private UserNameEditField UserName
 		}
 
 		@Override 
-		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
 
 		@Override 
-		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}

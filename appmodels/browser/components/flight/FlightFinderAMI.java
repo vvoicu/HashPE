@@ -383,21 +383,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getTextLocations(arg0);
-		}
-
-		@Override 
 		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0, java.awt.Rectangle arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getTextLocations(arg0, arg1);
 		}
 
 		@Override 
-		public void longPress() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.awt.Rectangle[] getTextLocations(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			getConcrete().longPress();
+			return getConcrete().getTextLocations(arg0);
 		}
 
 		@Override 
@@ -407,9 +401,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void longPress() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getLocation();
+			getConcrete().longPress();
 		}
 
 		@Override 
@@ -419,9 +413,21 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
+		public java.awt.Point getLocation() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getLocation();
+		}
+
+		@Override 
 		public java.lang.String getTitle() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getTitle();
+		}
+
+		@Override 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
@@ -434,12 +440,6 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getTagName();
-		}
-
-		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
@@ -467,15 +467,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.lang.String getCSSSelector() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getCSSSelector();
-		}
-
-		@Override 
 		public java.lang.String getSelectedItem() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getSelectedItem();
+		}
+
+		@Override 
+		public java.lang.String getCSSSelector() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getCSSSelector();
 		}
 
 		@Override 
@@ -497,15 +497,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
 		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getInnerText();
+		}
+
+		@Override 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getComputedStyle(arg0);
 		}
 
 		@Override 
@@ -521,9 +521,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().findChildren(arg0, arg1);
+			return getConcrete().verifyImageExists(arg0, arg1);
 		}
 
 		@Override 
@@ -533,21 +533,21 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> TChild[] findChildren(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException, java.lang.CloneNotSupportedException 
 		{
-			return getConcrete().verifyImageExists(arg0, arg1);
-		}
-
-		@Override 
-		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().hoverTap(arg0);
+			return getConcrete().findChildren(arg0, arg1);
 		}
 
 		@Override 
 		public void hoverTap() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().hoverTap();
+		}
+
+		@Override 
+		public void hoverTap(com.hp.lft.sdk.Location arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().hoverTap(arg0);
 		}
 
 		@Override 
@@ -605,15 +605,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
 		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
 
 		@Override 
@@ -629,7 +629,7 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
@@ -647,15 +647,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0, arg1);
-		}
-
-		@Override 
 		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pan(arg0);
+		}
+
+		@Override 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pan(arg0, arg1);
 		}
 
 		@Override 
@@ -671,15 +671,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().exists();
-		}
-
-		@Override 
 		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
 		}
 
 		@Override 
@@ -707,13 +707,13 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
 
 		@Override 
-		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
@@ -784,12 +784,6 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public void select(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().select(arg0);
-		}
-
-		@Override 
 		public void select(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().select(arg0);
@@ -802,15 +796,21 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void select(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getVisibleText();
+			getConcrete().select(arg0);
 		}
 
 		@Override 
 		public java.lang.String getVisibleText(java.awt.Rectangle arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getVisibleText(arg0);
+		}
+
+		@Override 
+		public java.lang.String getVisibleText() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getVisibleText();
 		}
 
 		@Override 
@@ -868,9 +868,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getTagName();
+			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
@@ -880,9 +880,9 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public <TChild extends TestObject> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.Description arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getTagName() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().describe(arg0, arg1);
+			return getConcrete().getTagName();
 		}
 
 		@Override 
@@ -928,27 +928,27 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().getComputedStyle(arg0);
-		}
-
-		@Override 
 		public java.lang.String getInnerText() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getInnerText();
 		}
 
 		@Override 
-		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
+		public java.lang.String getComputedStyle(java.lang.String arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
-			return getConcrete().getRole();
+			return getConcrete().getComputedStyle(arg0);
 		}
 
 		@Override 
 		public java.util.List<com.hp.lft.sdk.web.ListItem> getItems() throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().getItems();
+		}
+
+		@Override 
+		public java.lang.String getRole() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().getRole();
 		}
 
 		@Override 
@@ -964,15 +964,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageExists(arg0);
-		}
-
-		@Override 
 		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageExists(arg0, arg1);
+		}
+
+		@Override 
+		public java.awt.Point verifyImageExists(java.awt.image.RenderedImage arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageExists(arg0);
 		}
 
 		@Override 
@@ -1000,13 +1000,13 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().swipe(arg0);
 		}
 
 		@Override 
-		public void swipe(com.hp.lft.sdk.web.WebSwipeArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void swipe(com.hp.lft.sdk.SwipeDirection arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().swipe(arg0);
 		}
@@ -1024,13 +1024,13 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
 
 		@Override 
-		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.CSSDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public <TChild extends WebElement> TChild describe(java.lang.Class<TChild> arg0, com.hp.lft.sdk.web.XPathDescription arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().describe(arg0, arg1);
 		}
@@ -1066,15 +1066,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
-		}
-
-		@Override 
 		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1);
+		}
+
+		@Override 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
 
 		@Override 
@@ -1090,7 +1090,7 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, com.hp.lft.sdk.ImageMaskArea arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public boolean verifyImageMatch(java.awt.image.RenderedImage arg0, byte arg1, byte arg2) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().verifyImageMatch(arg0, arg1, arg2);
 		}
@@ -1108,25 +1108,25 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			getConcrete().pan(arg0, arg1);
-		}
-
-		@Override 
 		public void pan(com.hp.lft.sdk.web.WebPanArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pan(arg0);
 		}
 
 		@Override 
-		public void deselect(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pan(long arg0, long arg1) throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			getConcrete().pan(arg0, arg1);
+		}
+
+		@Override 
+		public void deselect(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().deselect(arg0);
 		}
 
 		@Override 
-		public void deselect(int... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void deselect(java.lang.String... arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().deselect(arg0);
 		}
@@ -1138,15 +1138,15 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
-		{
-			return getConcrete().exists();
-		}
-
-		@Override 
 		public boolean exists(java.lang.Integer arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			return getConcrete().exists(arg0);
+		}
+
+		@Override 
+		public boolean exists() throws com.hp.lft.sdk.GeneralLeanFtException 
+		{
+			return getConcrete().exists();
 		}
 
 		@Override 
@@ -1174,13 +1174,13 @@ public class FlightFinderAMI extends AppModelBase {		private TripType TripType;
 		}
 
 		@Override 
-		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
 
 		@Override 
-		public void pinch(double arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
+		public void pinch(com.hp.lft.sdk.web.WebPinchArgs arg0) throws com.hp.lft.sdk.GeneralLeanFtException 
 		{
 			getConcrete().pinch(arg0);
 		}
