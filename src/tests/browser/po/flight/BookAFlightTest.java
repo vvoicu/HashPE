@@ -86,10 +86,14 @@ public class BookAFlightTest extends UnitTestClassBase {
 		customerOne.setLastName("Pop");
 		customerOne.setMeal("Kosher");
 		
-		CustomerModel customerTwo = new CustomerModel();
-		customerTwo.setFirstName("Vasile");
-		customerTwo.setLastName("Matei");
+		CustomerModel customerTwo = new CustomerModel(true);
+//		customerTwo.setFirstName("Vasile");
+//		customerTwo.setLastName("Matei");
 		customerTwo.setMeal("Diabetic");
+		
+		System.out.println("FN: " + customerTwo.getFirstName());
+		System.out.println("LN: " + customerTwo.getLastName());
+		System.out.println("Meal: " + customerTwo.getMeal());
 		
 		customersList.add(customerOne);
 		customersList.add(customerTwo);
