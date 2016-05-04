@@ -9,8 +9,8 @@ import com.hp.lft.report.ReportException;
 import com.hp.lft.sdk.GeneralLeanFtException;
 import com.hp.lft.sdk.web.BrowserFactory;
 
-import browser.pages.flight.FlightFinderPage;
 import browser.pages.flight.FlightHomePage;
+import browser.pages.flight.finder.FlightFinderPage;
 import tools.Constants;
 import unittesting.UnitTestClassBase;
 

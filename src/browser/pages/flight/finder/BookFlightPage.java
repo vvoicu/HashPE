@@ -1,4 +1,4 @@
-package browser.pages.flight;
+package browser.pages.flight.finder;
 
 import java.util.List;
 

@@ -10,10 +10,10 @@ import com.hp.lft.sdk.GeneralLeanFtException;
 import com.hp.lft.sdk.web.BrowserFactory;
 
 import browser.pages.BrowserAbstractPage;
-import browser.pages.flight.FlightFinderPage;
 import browser.pages.flight.FlightHomePage;
-import browser.pages.flight.ProfilePage;
-import browser.pages.flight.RegisterPage;
+import browser.pages.flight.finder.FlightFinderPage;
+import browser.pages.flight.user.ProfilePage;
+import browser.pages.flight.user.RegisterPage;
 import tools.Constants;
 import tools.FieldGenerator;
 import tools.FieldGenerator.Mode;

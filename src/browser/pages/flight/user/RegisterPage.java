@@ -1,4 +1,4 @@
-package browser.pages.flight;
+package browser.pages.flight.user;
 
 import com.hp.lft.sdk.GeneralLeanFtException;
 import com.hp.lft.sdk.web.Browser;

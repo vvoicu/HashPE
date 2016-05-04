@@ -11,9 +11,9 @@ import com.hp.lft.report.ReportException;
 import com.hp.lft.sdk.GeneralLeanFtException;
 import com.hp.lft.sdk.web.BrowserFactory;
 
-import browser.pages.flight.FlightFinderPage;
 import browser.pages.flight.FlightHomePage;
-import browser.pages.flight.SelectFlightPage;
+import browser.pages.flight.finder.FlightFinderPage;
+import browser.pages.flight.finder.SelectFlightPage;
 import tools.Constants;
 import tools.Constants.SERVICE_CLASS_TYPE;
 import tools.Constants.TRIP_TYPE;
